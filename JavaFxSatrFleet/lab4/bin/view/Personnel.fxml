@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.PersonnelController">
+   <children>
+      <Button fx:id="logout" cancelButton="true" layoutX="556.0" layoutY="14.0" mnemonicParsing="false" onAction="#handle" prefHeight="41.0" prefWidth="80.0" style="-fx-border-radius: 50px;" text="Log Out">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="85.0" fitWidth="80.0" layoutX="29.0" layoutY="17.0">
+         <image>
+            <Image url="@../../login.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="132.0" layoutY="48.0" prefHeight="41.0" prefWidth="174.0" text="Welcome" textFill="#3e1fc9">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="name" layoutX="319.0" layoutY="48.0" prefHeight="41.0" prefWidth="174.0" />
+      <TilePane fx:id="tilePane" layoutX="-14.0" layoutY="162.0" prefHeight="624.0" prefWidth="700.0" />
+   </children>
+</AnchorPane>

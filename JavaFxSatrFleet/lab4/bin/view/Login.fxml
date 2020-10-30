@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="662.0" minWidth="692.0" prefHeight="662.0" prefWidth="692.0" style="-fx-background-color: #20120F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginController">
+	<children>
+		<TextField fx:id="userName" layoutX="239.0" layoutY="249.0" onAction="#handle" prefHeight="44.0" prefWidth="220.0">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</TextField>
+		<PasswordField fx:id="passwd" layoutX="242.0" layoutY="320.0" onAction="#handle" prefHeight="44.0" prefWidth="220.0" />
+		<Label layoutX="8.0" layoutY="249.0" prefHeight="36.0" prefWidth="208.0" text="Enter your Username:" textFill="#fcf9f9">
+			<font>
+				<Font name="System Bold" size="18.0" />
+			</font>
+		</Label>
+		<Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="77.0" layoutY="322.0" prefHeight="44.0" prefWidth="129.0" text=" Passphrase:" textFill="#f8f8f8">
+			<font>
+				<Font name="System Bold" size="18.0" />
+			</font>
+		</Label>
+		<Button fx:id="login" layoutX="242.0" layoutY="429.0" mnemonicParsing="false" onAction="#handle" prefHeight="36.0" prefWidth="92.0" text="Log In">
+			<textFill>
+				<LinearGradient endX="1.0" endY="1.0">
+					<stops>
+						<Stop color="#284643" />
+						<Stop color="#284643" offset="0.007874015748031496" />
+						<Stop color="#175b44" offset="0.007874015748031496" />
+						<Stop color="#17591d" offset="1.0" />
+					</stops>
+				</LinearGradient>
+			</textFill>
+			<font>
+				<Font name="System Bold" size="18.0" />
+			</font>
+		</Button>
+		<Label layoutX="332.0" layoutY="81.0" prefHeight="46.0" prefWidth="316.0" text="Starfleet Personnel" textFill="#4610e8">
+			<font>
+				<Font size="36.0" />
+			</font>
+		</Label>
+		<Label fx:id="status" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="251.0" layoutY="378.0" prefHeight="44.0" prefWidth="163.0" textFill="#e41313">
+			<font>
+				<Font name="System Bold" size="18.0" />
+			</font>
+		</Label>
+      <ImageView fitHeight="139.0" fitWidth="163.0" layoutX="63.0" layoutY="30.0">
+         <image>
+            <Image url="@../../login.jpg" />
+         </image>
+      </ImageView>
+	</children>
+</AnchorPane>
